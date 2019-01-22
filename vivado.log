@@ -1,0 +1,500 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Nov 14 10:41:03 2018
+# Process ID: 13508
+# Current directory: E:/PES UNIVERSITY/SEMESTER 5/CO_Project_ALU/alu
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14872 E:\PES UNIVERSITY\SEMESTER 5\CO_Project_ALU\alu\alu.xpr
+# Log file: E:/PES UNIVERSITY/SEMESTER 5/CO_Project_ALU/alu/vivado.log
+# Journal file: E:/PES UNIVERSITY/SEMESTER 5/CO_Project_ALU/alu\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/PES UNIVERSITY/SEMESTER 5/CO_Project_ALU/alu/alu.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinix/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:31 . Memory (MB): peak = 850.027 ; gain = 103.832
+update_compile_order -fileset sources_1
+close [ open {E:/PES UNIVERSITY/SEMESTER 5/CO_Project_ALU/alu/alu.srcs/sources_1/new/decoder.v} w ]
+add_files {{E:/PES UNIVERSITY/SEMESTER 5/CO_Project_ALU/alu/alu.srcs/sources_1/new/decoder.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property is_enabled false [get_files  {{E:/PES UNIVERSITY/SEMESTER 5/CO_Project_ALU/alu/alu.srcs/sources_1/new/decoder.v}}]
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/PES UNIVERSITY/SEMESTER 5/CO_Project_ALU/alu/alu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim_alu' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/PES UNIVERSITY/SEMESTER 5/CO_Project_ALU/alu/alu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim_alu_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/PES UNIVERSITY/SEMESTER 5/CO_Project_ALU/alu/alu.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/PES UNIVERSITY/SEMESTER 5/CO_Project_ALU/alu/alu.srcs/sim_1/new/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_alu
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/PES UNIVERSITY/SEMESTER 5/CO_Project_ALU/alu/alu.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinix/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 4ffcd4ee6de34650a9c84a991db2cb0f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sim_alu_behav xil_defaultlib.sim_alu xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.sim_alu
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_alu_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source E:/PES -notrace
+couldn't read file "E:/PES": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Sat Nov 17 08:53:41 2018...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 922.027 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '11' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/PES UNIVERSITY/SEMESTER 5/CO_Project_ALU/alu/alu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim_alu_behav -key {Behavioral:sim_1:Functional:sim_alu} -tclbatch {sim_alu.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source sim_alu.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 926.848 ; gain = 4.820
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim_alu_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:23 . Memory (MB): peak = 926.848 ; gain = 4.820
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: alu
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1035.719 ; gain = 103.898
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'alu' [E:/PES UNIVERSITY/SEMESTER 5/CO_Project_ALU/alu/alu.srcs/sources_1/new/alu.v:23]
+INFO: [Synth 8-226] default block is never used [E:/PES UNIVERSITY/SEMESTER 5/CO_Project_ALU/alu/alu.srcs/sources_1/new/alu.v:39]
+ERROR: [Synth 8-277] exponentiation is not supported [E:/PES UNIVERSITY/SEMESTER 5/CO_Project_ALU/alu/alu.srcs/sources_1/new/alu.v:56]
+ERROR: [Synth 8-6156] failed synthesizing module 'alu' [E:/PES UNIVERSITY/SEMESTER 5/CO_Project_ALU/alu/alu.srcs/sources_1/new/alu.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1089.781 ; gain = 157.961
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+2 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/PES UNIVERSITY/SEMESTER 5/CO_Project_ALU/alu/alu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim_alu' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/PES UNIVERSITY/SEMESTER 5/CO_Project_ALU/alu/alu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim_alu_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/PES UNIVERSITY/SEMESTER 5/CO_Project_ALU/alu/alu.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/PES UNIVERSITY/SEMESTER 5/CO_Project_ALU/alu/alu.srcs/sim_1/new/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_alu
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/PES UNIVERSITY/SEMESTER 5/CO_Project_ALU/alu/alu.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinix/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 4ffcd4ee6de34650a9c84a991db2cb0f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sim_alu_behav xil_defaultlib.sim_alu xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.sim_alu
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_alu_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/PES UNIVERSITY/SEMESTER 5/CO_Project_ALU/alu/alu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim_alu_behav -key {Behavioral:sim_1:Functional:sim_alu} -tclbatch {sim_alu.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source sim_alu.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim_alu_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1089.781 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property is_enabled false [get_files  {{E:/PES UNIVERSITY/SEMESTER 5/CO_Project_ALU/alu/alu.srcs/sim_1/new/testbench.v}}]
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/PES UNIVERSITY/SEMESTER 5/CO_Project_ALU/alu/alu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'alu' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/PES UNIVERSITY/SEMESTER 5/CO_Project_ALU/alu/alu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj alu_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/PES UNIVERSITY/SEMESTER 5/CO_Project_ALU/alu/alu.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinix/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 4ffcd4ee6de34650a9c84a991db2cb0f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot alu_behav xil_defaultlib.alu xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot alu_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source E:/PES -notrace
+couldn't read file "E:/PES": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Sat Nov 17 09:22:23 2018...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1089.781 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/PES UNIVERSITY/SEMESTER 5/CO_Project_ALU/alu/alu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "alu_behav -key {Behavioral:sim_1:Functional:alu} -tclbatch {alu.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source alu.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'alu_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1089.781 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+add_force {/alu/A} -radix bin {1010 0ns}
+add_force {/alu/B} -radix bin {0101 0ns}
+add_force {/alu/A} -radix bin {10101010 0ns}
+add_force {/alu/B} -radix hex {01010101 0ns}
+ERROR: [Simtcl 6-179] Couldn't add force for the following reason: Illegal value '01010101': Object size 8 does not match size of given value 01010101.
+add_force {/alu/B} -radix bin {01010101 0ns}
+add_force {/alu/Select} -radix bin {0100 0ns}
+run 10 us
+run 10 us
+add_force {/alu/Select} -radix bin {0000 0ns}
+run 10 us
+add_force {/alu/Select} -radix bin {0101 0ns}
+add_force {/alu/Select} -radix hex {1111 0ns}
+ERROR: [Simtcl 6-179] Couldn't add force for the following reason: Illegal value '1111': Object size 4 does not match size of given value 1111.
+add_force {/alu/Select} -radix bin {1111 0ns}
+add_force {/alu/Select} -radix bin {1110 0ns}
+add_force {/alu/Select} -radix bin {1111 0ns}
+run 10 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property is_enabled true [get_files  {{E:/PES UNIVERSITY/SEMESTER 5/CO_Project_ALU/alu/alu.srcs/sim_1/new/testbench.v}}]
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/PES UNIVERSITY/SEMESTER 5/CO_Project_ALU/alu/alu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim_alu' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/PES UNIVERSITY/SEMESTER 5/CO_Project_ALU/alu/alu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim_alu_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/PES UNIVERSITY/SEMESTER 5/CO_Project_ALU/alu/alu.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/PES UNIVERSITY/SEMESTER 5/CO_Project_ALU/alu/alu.srcs/sim_1/new/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_alu
+INFO: [VRFC 10-2458] undeclared symbol A, assumed default net type wire [E:/PES UNIVERSITY/SEMESTER 5/CO_Project_ALU/alu/alu.srcs/sim_1/new/testbench.v:32]
+INFO: [VRFC 10-2458] undeclared symbol B, assumed default net type wire [E:/PES UNIVERSITY/SEMESTER 5/CO_Project_ALU/alu/alu.srcs/sim_1/new/testbench.v:32]
+INFO: [VRFC 10-2458] undeclared symbol Select, assumed default net type wire [E:/PES UNIVERSITY/SEMESTER 5/CO_Project_ALU/alu/alu.srcs/sim_1/new/testbench.v:32]
+INFO: [VRFC 10-2458] undeclared symbol Out, assumed default net type wire [E:/PES UNIVERSITY/SEMESTER 5/CO_Project_ALU/alu/alu.srcs/sim_1/new/testbench.v:32]
+INFO: [VRFC 10-2458] undeclared symbol carry, assumed default net type wire [E:/PES UNIVERSITY/SEMESTER 5/CO_Project_ALU/alu/alu.srcs/sim_1/new/testbench.v:32]
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/PES UNIVERSITY/SEMESTER 5/CO_Project_ALU/alu/alu.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinix/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 4ffcd4ee6de34650a9c84a991db2cb0f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sim_alu_behav xil_defaultlib.sim_alu xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 8 for port A [E:/PES UNIVERSITY/SEMESTER 5/CO_Project_ALU/alu/alu.srcs/sim_1/new/testbench.v:32]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.sim_alu
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_alu_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/PES UNIVERSITY/SEMESTER 5/CO_Project_ALU/alu/alu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim_alu_behav -key {Behavioral:sim_1:Functional:sim_alu} -tclbatch {sim_alu.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source sim_alu.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim_alu_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1089.781 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+add_force {/sim_alu/A} -radix bin {10101010 0ns}
+ERROR: [Simtcl 6-179] Couldn't add force for the following reason: Illegal value '10101010': Object size 1 does not match size of given value 10101010.
+add_force {/sim_alu/A} -radix bin {10101010 0ns}
+ERROR: [Simtcl 6-179] Couldn't add force for the following reason: Illegal value '10101010': Object size 1 does not match size of given value 10101010.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/PES UNIVERSITY/SEMESTER 5/CO_Project_ALU/alu/alu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim_alu' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/PES UNIVERSITY/SEMESTER 5/CO_Project_ALU/alu/alu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim_alu_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/PES UNIVERSITY/SEMESTER 5/CO_Project_ALU/alu/alu.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/PES UNIVERSITY/SEMESTER 5/CO_Project_ALU/alu/alu.srcs/sim_1/new/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_alu
+INFO: [VRFC 10-2458] undeclared symbol Out, assumed default net type wire [E:/PES UNIVERSITY/SEMESTER 5/CO_Project_ALU/alu/alu.srcs/sim_1/new/testbench.v:32]
+INFO: [VRFC 10-2458] undeclared symbol carry, assumed default net type wire [E:/PES UNIVERSITY/SEMESTER 5/CO_Project_ALU/alu/alu.srcs/sim_1/new/testbench.v:32]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/PES UNIVERSITY/SEMESTER 5/CO_Project_ALU/alu/alu.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinix/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 4ffcd4ee6de34650a9c84a991db2cb0f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sim_alu_behav xil_defaultlib.sim_alu xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 8 for port Out [E:/PES UNIVERSITY/SEMESTER 5/CO_Project_ALU/alu/alu.srcs/sim_1/new/testbench.v:32]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.sim_alu
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_alu_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/PES UNIVERSITY/SEMESTER 5/CO_Project_ALU/alu/alu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim_alu_behav -key {Behavioral:sim_1:Functional:sim_alu} -tclbatch {sim_alu.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source sim_alu.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim_alu_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1089.781 ; gain = 0.000
+add_force {/sim_alu/A} -radix bin {10101010 0ns}
+add_force {/sim_alu/B} -radix bin {01010101 0ns}
+add_force {/sim_alu/Select} -radix bin {0000 0ns}
+run all
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1089.781 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+add_force {/sim_alu/A} -radix bin {10101010 0ns}
+add_force {/sim_alu/B} -radix hex {01010101 0ns}
+ERROR: [Simtcl 6-179] Couldn't add force for the following reason: Illegal value '01010101': Object size 8 does not match size of given value 01010101.
+add_force {/sim_alu/B} -radix bin {01010101 0ns}
+add_force {/sim_alu/Select} -radix bin {0000 0ns}
+run all
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1089.781 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+run 10 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+add_force {/sim_alu/A} -radix hex {10101010 0ns}
+ERROR: [Simtcl 6-179] Couldn't add force for the following reason: Illegal value '10101010': Object size 8 does not match size of given value 10101010.
+add_force {/sim_alu/A} -radix bin {10101010 0ns}
+add_force {/sim_alu/B} -radix bin {01010101 0ns}
+add_force {/sim_alu/Select} -radix bin {0000 0ns}
+run 10 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/PES UNIVERSITY/SEMESTER 5/CO_Project_ALU/alu/alu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim_alu' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/PES UNIVERSITY/SEMESTER 5/CO_Project_ALU/alu/alu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim_alu_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/PES UNIVERSITY/SEMESTER 5/CO_Project_ALU/alu/alu.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/PES UNIVERSITY/SEMESTER 5/CO_Project_ALU/alu/alu.srcs/sim_1/new/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_alu
+INFO: [VRFC 10-2458] undeclared symbol Out, assumed default net type wire [E:/PES UNIVERSITY/SEMESTER 5/CO_Project_ALU/alu/alu.srcs/sim_1/new/testbench.v:32]
+INFO: [VRFC 10-2458] undeclared symbol carry, assumed default net type wire [E:/PES UNIVERSITY/SEMESTER 5/CO_Project_ALU/alu/alu.srcs/sim_1/new/testbench.v:32]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/PES UNIVERSITY/SEMESTER 5/CO_Project_ALU/alu/alu.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinix/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 4ffcd4ee6de34650a9c84a991db2cb0f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sim_alu_behav xil_defaultlib.sim_alu xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 8 for port Out [E:/PES UNIVERSITY/SEMESTER 5/CO_Project_ALU/alu/alu.srcs/sim_1/new/testbench.v:32]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.sim_alu
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_alu_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/PES UNIVERSITY/SEMESTER 5/CO_Project_ALU/alu/alu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim_alu_behav -key {Behavioral:sim_1:Functional:sim_alu} -tclbatch {sim_alu.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source sim_alu.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim_alu_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1089.781 ; gain = 0.000
+add_force {/sim_alu/A} -radix bin {10101010 0ns}
+add_force {/sim_alu/B} -radix bin {01010101 0ns}
+add_force {/sim_alu/Select} -radix bin {0000 0ns}
+run all
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:05:46 ; elapsed = 00:05:42 . Memory (MB): peak = 1089.781 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/PES UNIVERSITY/SEMESTER 5/CO_Project_ALU/alu/alu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim_alu' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/PES UNIVERSITY/SEMESTER 5/CO_Project_ALU/alu/alu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim_alu_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/PES UNIVERSITY/SEMESTER 5/CO_Project_ALU/alu/alu.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinix/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 4ffcd4ee6de34650a9c84a991db2cb0f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sim_alu_behav xil_defaultlib.sim_alu xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 8 for port Out [E:/PES UNIVERSITY/SEMESTER 5/CO_Project_ALU/alu/alu.srcs/sim_1/new/testbench.v:32]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/PES UNIVERSITY/SEMESTER 5/CO_Project_ALU/alu/alu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim_alu_behav -key {Behavioral:sim_1:Functional:sim_alu} -tclbatch {sim_alu.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source sim_alu.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim_alu_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1089.781 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
